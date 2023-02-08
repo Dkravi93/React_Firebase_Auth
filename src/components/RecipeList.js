@@ -1,7 +1,6 @@
 
 
 export default function RecipeList({ recipes, onSave, onDelete, onViewDetails }) {
-    console.log(recipes);
     return (
       <ul>
         {recipes.recipes.map(recipe => (

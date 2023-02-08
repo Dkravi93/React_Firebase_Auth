@@ -16,6 +16,20 @@ const initialState = {
       instructions: 'lorem ipsum dolor sit amet, consectetur',
       image:'https://thumbs.dreamstime.com/b/pasta-arabbiata-25793698.jpg'
     },
+    {
+      id: 3,
+      name: 'Pza',
+      ingredients: ['dough', 'tomato sauce', 'cheese', 'toppings'],
+      instructions: 'lorem ipsum dolor sit amet, consectetur',
+      image: 'https://thumbs.dreamstime.com/b/pizza-rustic-italian-mozzarella-cheese-basil-leaves-35669930.jpg'
+    },
+    {
+      id: 4,
+      name: 'Sptti',
+      ingredients: ['spaghetti', 'tomato sauce', 'ground beef'],
+      instructions: 'lorem ipsum dolor sit amet, consectetur',
+      image:'https://thumbs.dreamstime.com/b/pasta-arabbiata-25793698.jpg'
+    },
   ],
   savedRecipes: [],
   searchedRecipes: [],
@@ -23,7 +37,7 @@ const initialState = {
 };
 
 export default function recipeReducer(state = initialState, action) {
-
+console.log("fdhfhfgj", action)
   switch (action.type) {
     case SAVE_RECIPE:
       return {
